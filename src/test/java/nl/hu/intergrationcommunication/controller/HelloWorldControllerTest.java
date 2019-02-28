@@ -1,8 +1,8 @@
-package nl.hu.intergrationcommunication;
+package nl.hu.intergrationcommunication.controller;
 
-import nl.hu.intergrationcommunication.controller.HelloWorldController;
-import org.assertj.core.api.Assertions;
 import org.junit.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class HelloWorldControllerTest {
 
@@ -12,8 +12,7 @@ public class HelloWorldControllerTest {
     public void shouldReturnHelloMessage() {
         String message = helloWorldController.hello();
 
-        Assertions.assertThat(message).isEqualTo("Hello my friend.");
-        System.out.println("Gelukt!");
+        assertThat(message).isEqualTo("Hello my friend.");
     }
 
 }
